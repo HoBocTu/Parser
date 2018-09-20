@@ -2,6 +2,11 @@ package com.parser;
 
 import java.util.*;
 
+
+/*
+*If your number < 0 - 1 adds
+*else 0 adds
+*/
 public class parser
 {
       public static void main(String args[])
