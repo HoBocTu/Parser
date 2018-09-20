@@ -12,7 +12,7 @@ public class parser
                   long n = scan.nextLong();
                   printType(n);
                   System.out.println(toBinaryString(n));
-            }catch (Exeption e){
+            }catch (Exception e){
                   System.out.println("Very big number");
             }
       }
@@ -36,11 +36,11 @@ public class parser
             return ( sign > 0 )? "0" + ans : "1" + ans;
       }
       private static void printType(long n){
-            if (-129 < n < 128)
+            if (-129 < n && n < 128)
                   System.out.print("byte ");
-            else if(-32769 < n < 32768)
+            else if(-32769 < n && n < 32768)
                   System.out.print("short ");
-            else if(-2147483649l < n < 2147483648l)
+            else if(-2147483649l < n && n < 2147483648l)
                   System.out.print("int ");
             else
                   System.out.print("long ");
