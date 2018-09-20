@@ -9,20 +9,20 @@ public class parser
             try
             {
                   Scanner scan = new Scanner(System.in);
-                  int n = scan.nextInt();
+                  long n = scan.nextLong();
                   printType(n);
                   System.out.println(toBinaryString(n));
             }catch (Exeption e){
                   System.out.println("Very big number");
             }
       }
-      private static String toBinaryString(int i){
+      private static String toBinaryString(long i){
             String ans = "";
-            int ci = i;
+            long ci = i;
             int sign = ( ci < 0 )? -1: 1;
             ci*= sign;
             i*= sign;
-            int res = 0;
+            long res = 0;
             String bit;
 
             while (i > 0){
